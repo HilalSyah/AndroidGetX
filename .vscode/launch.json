@@ -1,0 +1,48 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "kalkulator_aritmatika",
+            "request": "launch",
+            "type": "dart",
+            "program": "C:/Users/Asus/OneDrive/Desktop/flutter/kalkulator_aritmatika/lib/main.dart"  // Updated to OneDrive path
+        },
+        {
+            "name": "kalkulator_aritmatika (profile mode)",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "profile",
+            "program": "C:/Users/Asus/OneDrive/Desktop/flutter/kalkulator_aritmatika/lib/main.dart"  // Updated to OneDrive path
+        },
+        {
+            "name": "kalkulator_aritmatika (release mode)",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "release",
+            "program": "C:/Users/Asus/OneDrive/Desktop/flutter/kalkulator_aritmatika/lib/main.dart"  // Updated to OneDrive path
+        },
+        {
+            "name": "flutter_getx_calculator",
+            "cwd": "C:/Users/Asus/OneDrive/Desktop/flutter_getx_calculator",  // Updated to OneDrive path
+            "request": "launch",
+            "type": "dart",
+            "program": "C:/Users/Asus/OneDrive/Desktop/flutter_getx_calculator/lib/main.dart"  // Updated to OneDrive path
+        },
+        {
+            "name": "flutter_getx_calculator (profile mode)",
+            "cwd": "C:/Users/Asus/OneDrive/Desktop/flutter_getx_calculator",  // Updated to OneDrive path
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "profile",
+            "program": "C:/Users/Asus/OneDrive/Desktop/flutter_getx_calculator/lib/main.dart"  // Updated to OneDrive path
+        },
+        {
+            "name": "flutter_getx_calculator (release mode)",
+            "cwd": "C:/Users/Asus/OneDrive/Desktop/flutter_getx_calculator",  // Updated to OneDrive path
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "release",
+            "program": "C:/Users/Asus/OneDrive/Desktop/flutter_getx_calculator/lib/main.dart"  // Updated to OneDrive path
+        }
+    ]
+}
