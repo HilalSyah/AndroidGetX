@@ -1,7 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:kalkulator_aritmatika/app/modules/arithmetic/views/arithmetic_view.dart';
+import 'package:get/get.dart';
+import 'app/modules/arithmetic/controllers/arithmetic_controller.dart'; // Pastikan path ini benar
+import 'app/modules/arithmetic/views/arithmetic_view.dart'; // Pastikan path ini benar
 
 void main() {
+  // Register the controller
+  Get.put(ArithmeticController());
+
   runApp(const MyApp());
 }
 

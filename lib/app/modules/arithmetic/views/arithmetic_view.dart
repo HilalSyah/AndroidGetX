@@ -2,11 +2,17 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import '../controllers/arithmetic_controller.dart';
 
-class ArithmeticView extends StatelessWidget {
+class ArithmeticView extends StatefulWidget {
+  @override
+  _ArithmeticViewState createState() => _ArithmeticViewState();
+}
+
+class _ArithmeticViewState extends State<ArithmeticView> {
+  // Pastikan controller ini diinisialisasi dengan benar di aplikasi
+  final ArithmeticController controller = Get.find<ArithmeticController>();
+
   @override
   Widget build(BuildContext context) {
-    final ArithmeticController controller = Get.find();
-
     return Scaffold(
       appBar: AppBar(
         title: Text('Arithmetic Calculator'),
@@ -26,34 +32,34 @@ class ArithmeticView extends StatelessWidget {
           ),
           Row(
             children: [
-              calcButton('7', controller),
-              calcButton('8', controller),
-              calcButton('9', controller),
-              calcButton('/', controller, Colors.orange),
+              calcButton('7'),
+              calcButton('8'),
+              calcButton('9'),
+              calcButton('/', Colors.orange),
             ],
           ),
           Row(
             children: [
-              calcButton('4', controller),
-              calcButton('5', controller),
-              calcButton('6', controller),
-              calcButton('*', controller, Colors.orange),
+              calcButton('4'),
+              calcButton('5'),
+              calcButton('6'),
+              calcButton('*', Colors.orange),
             ],
           ),
           Row(
             children: [
-              calcButton('1', controller),
-              calcButton('2', controller),
-              calcButton('3', controller),
-              calcButton('-', controller, Colors.orange),
+              calcButton('1'),
+              calcButton('2'),
+              calcButton('3'),
+              calcButton('-', Colors.orange),
             ],
           ),
           Row(
             children: [
-              calcButton('0', controller),
-              calcButton('C', controller, Colors.red),
-              calcButton('=', controller, Colors.green),
-              calcButton('+', controller, Colors.orange),
+              calcButton('0'),
+              calcButton('C', Colors.red),
+              calcButton('=', Colors.green),
+              calcButton('+', Colors.orange),
             ],
           ),
         ],
@@ -61,10 +67,11 @@ class ArithmeticView extends StatelessWidget {
     );
   }
 
-  Widget calcButton(String label, ArithmeticController controller, [Color color = Colors.grey]) {
+  Widget calcButton(String label, [Color color = Colors.grey]) {
     return Expanded(
       child: ElevatedButton(
         onPressed: () {
+          // Pastikan metode-metode ini ada di ArithmeticController
           if (label == 'C') {
             controller.clear();
           } else if (label == '=') {
